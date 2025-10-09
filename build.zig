@@ -16,7 +16,7 @@ pub fn build(b: *std.Build) void {
         .root_module = mod,
     });
 
-    lib.addIncludePath(b.path("eigen-master"));
+    lib.addIncludePath(b.path("lib"));
     lib.addIncludePath(b.path("include"));
     lib.addCSourceFiles(.{
         .root = b.path("src"),

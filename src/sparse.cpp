@@ -1,5 +1,5 @@
 #include "sparse.h"
-#include <Eigen/Sparse>
+#include <eigen/Eigen/Sparse>
 
 using SparseMatrix = Eigen::SparseMatrix<SCALAR, Eigen::ColMajor, INDEX>;
 using Vector = Eigen::Matrix<SCALAR, Eigen::Dynamic, 1>;
@@ -59,6 +59,7 @@ extern "C"
 
     void destroySparseMatrix(void *mat)
     {
-        delete mat;
+        SparseMatrix *sparseMat = static_cast<SparseMatrix *>(mat);
+        delete sparseMat;
     }
 }

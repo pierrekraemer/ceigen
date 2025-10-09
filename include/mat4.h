@@ -3,7 +3,6 @@
 #include <stdbool.h>
 
 #define SCALAR double
-#define INDEX unsigned int
 
 #ifdef __cplusplus
 extern "C"
