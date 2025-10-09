@@ -9,7 +9,7 @@
         "build.zig.zon",
         "src",
         "include",
-        "eigen-master",
+        "lib",
         // For example...
         //"LICENSE",
         //"README.md",
