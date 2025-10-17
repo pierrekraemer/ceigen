@@ -21,8 +21,9 @@ pub fn build(b: *std.Build) void {
     lib.addCSourceFiles(.{
         .root = b.path("src"),
         .files = &.{
-            "mat4.cpp",
+            "small.cpp",
             "sparse.cpp",
+            "dense.cpp",
         },
     });
     lib.installHeadersDirectory(
