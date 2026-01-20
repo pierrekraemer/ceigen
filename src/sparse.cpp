@@ -11,7 +11,7 @@ extern "C"
     {
         const SparseMatrix *sparseMat = static_cast<const SparseMatrix *>(mat);
         SparseMatrix *sparseMatOut = static_cast<SparseMatrix *>(matOut);
-        *sparseMatOut = (*sparseMat) * scalar;
+        *sparseMatOut = scalar * (*sparseMat);
     }
 
     void addSparseMatrices(const void *matA, const void *matB, void *matOut)
